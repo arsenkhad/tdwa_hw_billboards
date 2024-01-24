@@ -1,0 +1,32 @@
+@import '../../variables.css';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    background: var(--primary);
+    /* background: linear-gradient(0deg, var(--background) 0%, var(--primary) 20%); */
+}
+  
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--background);
+}
+
+.logo {
+    height: 30px; 
+    margin-right: 10px;
+}
+
+.avatar {
+    width: clamp(2rem, 6vw, 5rem);
+  height: clamp(2rem, 6vw, 5rem);
+  border-radius: 50%;
+  border: 3px solid var(--secondary);
+  background: url(frieren.webp) center / cover;
+}
+  

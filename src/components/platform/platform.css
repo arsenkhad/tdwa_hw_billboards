@@ -1,0 +1,98 @@
+@import '../../variables.css';
+
+.platform {
+    border: 2px solid var(--grey);
+    background-color: var(--card-background);
+    margin: 5vmin 5vmin auto;
+    padding: 0 30px 10px 30px;
+    border-radius: 20px;
+    flex-basis: 40%;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.platform-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 10px;
+  cursor: pointer;
+}
+
+.platform-title {
+  margin: 0;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.platform-content {
+  padding: 0 10px;
+}
+  
+.platform-bottom{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.billboard-id{
+  font-size: calc(4px + 2vmin);
+  margin: 10px;
+  color: var(--grey);
+}
+
+.application-table{
+  width: 100%;
+  border-collapse: collapse;
+  padding: 5px;
+  margin-bottom: 3vh;
+  font-size: calc(4px + 2vmin);
+}
+
+.application-table th {
+  padding: 8px;
+  text-align: center;
+}
+
+.application-table td {
+  border-top: 2px solid var(--grey);
+  border-bottom: 2px solid var(--grey);
+  text-align: center;
+}
+
+.application-table td:nth-child(1) {
+  text-align: left;
+  width: 35%;
+}
+
+.application-table td:nth-child(4) {
+  text-align: right;
+  width: 19%;
+}
+
+.no-applications{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--grey);
+  padding: 10px;
+  font-size: calc(6px + 2vmin);
+  border-top: 2px solid var(--grey);
+  border-bottom: 2px solid var(--grey);
+  margin: 3vh 0;
+}
+
+.m0 {
+  margin: 0 !important;
+}

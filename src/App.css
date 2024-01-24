@@ -1,0 +1,25 @@
+@import './variables.css';
+
+.App {
+  background-color: var(--background);
+  background: radial-gradient(at 70% 50%, var(--blue) 20%, var(--blue-light) 50%), linear-gradient(60deg, var(--primary) 0%, var(--background) 50%);
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: var(--text);
+}
+
+.billboards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.billboard-button{
+  margin: 5vmin;
+}
+
+.notification{
+  color: var(--accent);
+  text-align: center;
+  margin-top: 2vh;
+  flex-grow: 1;
+}

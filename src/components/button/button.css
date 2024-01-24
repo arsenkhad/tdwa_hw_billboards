@@ -1,0 +1,61 @@
+@import '../../variables.css';
+
+.button {
+    padding: 12px 20px;
+    font-size: calc(6px + 2vmin);
+    background: none;
+    color: var(--primary);
+    border: 2px solid var(--grey-light);
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.button:hover {
+    opacity: 0.33;
+}
+  
+.button.default {
+    background-color: var(--grey);
+    color: var(--background);
+}
+.button.danger {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+.button.success {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.button.small {
+    font-size: calc(6px + 1vmin);
+}
+
+.button.add {
+    margin: 0;
+    padding: 15px 30px;
+    font-size: 3vmin;
+}
+
+.button.add:hover {
+    opacity: 0.8;
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.button.danger.small {
+    background: none;
+    color: var(--accent);
+    font-size: calc(6px + 2vmin);
+    padding: 6px 15px;
+}
+
+.button.success.small {
+    background: none;
+    color: var(--secondary);
+    font-size: calc(6px + 2vmin);
+    padding: 6px 13px 6px 15px;
+}
