@@ -243,7 +243,7 @@ const Platform = ({data, billboards, handleDeleteBillboard, reloadBillboards, re
             </div>
             <div className="modal-body">
               <p className='modal-form-title-h'>Билборд:</p>
-              <Select options={billboards} onSelect={(value) => setBillboardId(value)} placeholder={data.address}/>
+              <Select options={billboards} onSelect={(value) => setBillboardId(value)} selected={data.id}/>
             </div>
             <div className="modal-body">  
               <p>Даты:</p>

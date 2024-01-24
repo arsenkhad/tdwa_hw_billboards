@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "./select.css"
 
-const Select = ({ options, onSelect }) => {
-    const [selectedOption, setSelectedOption] = useState(options.length !== 0 ? options[0].id : "");
+const Select = ({ options, onSelect, selected }) => {
+    const [selectedOption, setSelectedOption] = useState(options.length !== 0 ? selected : "");
 
     useEffect(() => {
         onSelect(selectedOption);
@@ -15,9 +15,9 @@ const Select = ({ options, onSelect }) => {
     };
 
     return (
-        <select className="custom-select" value={selectedOption ? selectedOption.id : ''} onChange={handleSelectChange}>
+        <select className="custom-select" onChange={handleSelectChange}>
             {options.map((option) => (
-                <option key={option.id} value={option.id}>
+                <option key={option.id} value={option.id} selected={(option.id === selected)}>
                     {option.address}
                 </option>
             ))}
